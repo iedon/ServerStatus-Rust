@@ -138,9 +138,9 @@ def tupd():
 
 def get_network(ip_version):
     if (ip_version == 4):
-        domain = "ipv4.google.com"
+        domain = "ip4.me"
     elif (ip_version == 6):
-        domain = "ipv6.google.com"
+        domain = "ip6only.me"
     try:
         socket.create_connection((domain, 80), 2).close()
         return True
